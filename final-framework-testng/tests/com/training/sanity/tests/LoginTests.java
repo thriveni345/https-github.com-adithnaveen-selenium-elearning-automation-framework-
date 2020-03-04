@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.training.generics.ScreenShot;
 import com.training.pom.HomePOM;
 import com.training.pom.LoginPOM;
+import com.training.pom.RegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -20,8 +21,8 @@ public class LoginTests {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
 	private HomePOM homePOM;
+	private RegisterPOM registerPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -35,12 +36,13 @@ public class LoginTests {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		registerPOM = new RegisterPOM(driver);
 		homePOM=new HomePOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
+		
 	}
 	
 	@AfterMethod
@@ -51,9 +53,22 @@ public class LoginTests {
 	@Test
 	public void validLoginTest() {
 		homePOM.clickUserIcon();
-		loginPOM.sendUserName("veni@gmail.com");
-		loginPOM.sendPassword("veni1234");
-		loginPOM.clickLoginBtn(); 
+		homePOM.clickRegister_btn();
+		registerPOM.sendFirstName("thri");
+		registerPOM.sendLastname("veni");
+		registerPOM.sendemail("veni@gmail.com");
+		registerPOM.sendtelephone("9678766555");
+		registerPOM.sendaddress("Electronic city");
+		registerPOM.sendcity("Bangalore");
+		registerPOM.sendpostcode("560100");
+		registerPOM.clickCountry();
+		registerPOM.clickState();
+		registerPOM.sendpass("aasu1234");
+		registerPOM.sendconfirm("aasu1234");
+		registerPOM.clickNewsletter();
+		registerPOM.clickagree();
+		registerPOM.clickContinue();
+	
 		screenShot.captureScreenShot("First");
 	}
 }

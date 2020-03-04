@@ -19,5 +19,12 @@ public class HomePOM {
 	public void clickUserIcon() {
 		this.user_icon.click();
 	}
+	@FindBy(partialLinkText="Register")
+	private WebElement Register_btn;
+	
+	public void clickRegister_btn() {
+		this.Register_btn.click();
+	
 
+}
 }
