@@ -22,7 +22,8 @@ public class LoginTests {
 	private WebDriver driver;
 	private String baseUrl;
 	private HomePOM homePOM;
-	private RegisterPOM registerPOM;
+	private LoginPOM loginPOM;
+	//private RegisterPOM registerPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -36,7 +37,8 @@ public class LoginTests {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		registerPOM = new RegisterPOM(driver);
+		//registerPOM = new RegisterPOM(driver);
+		loginPOM=new LoginPOM(driver);
 		homePOM=new HomePOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
@@ -53,7 +55,11 @@ public class LoginTests {
 	@Test
 	public void validLoginTest() {
 		homePOM.clickUserIcon();
-		homePOM.clickRegister_btn();
+		homePOM.clickLogin_btn();
+		loginPOM.sendUserName("veni@gmail.com");
+		loginPOM.sendPassword("aasu1234");
+		loginPOM.clickLoginBtn();
+		/*homePOM.clickRegister_btn();
 		registerPOM.sendFirstName("thri");
 		registerPOM.sendLastname("veni");
 		registerPOM.sendemail("veni@gmail.com");
@@ -67,7 +73,7 @@ public class LoginTests {
 		registerPOM.sendconfirm("aasu1234");
 		registerPOM.clickNewsletter();
 		registerPOM.clickagree();
-		registerPOM.clickContinue();
+		registerPOM.clickContinue();*/
 	
 		screenShot.captureScreenShot("First");
 	}
