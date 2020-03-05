@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30038" started-at="2020-03-05T04:34:23Z" finished-at="2020-03-05T04:34:53Z">
+  <suite name="Default suite" duration-ms="22678" started-at="2020-03-05T05:49:28Z" finished-at="2020-03-05T05:49:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30038" started-at="2020-03-05T04:34:23Z" finished-at="2020-03-05T04:34:53Z">
-      <class name="com.training.sanity.tests.Register">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Register@cc285f4]" name="setUpBeforeClass" is-config="true" duration-ms="29" started-at="2020-03-05T10:04:23Z" finished-at="2020-03-05T10:04:23Z">
+    <test name="Default test" duration-ms="22678" started-at="2020-03-05T05:49:28Z" finished-at="2020-03-05T05:49:51Z">
+      <class name="com.training.sanity.tests.RecoverPassword">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2020-03-05T11:19:28Z" finished-at="2020-03-05T11:19:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Register@cc285f4]" name="setUp" is-config="true" duration-ms="19719" started-at="2020-03-05T10:04:23Z" finished-at="2020-03-05T10:04:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="setUp" is-config="true" duration-ms="15412" started-at="2020-03-05T11:19:28Z" finished-at="2020-03-05T11:19:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validRegisterTest()[pri:0, instance:com.training.sanity.tests.Register@cc285f4]" name="validRegisterTest" duration-ms="8008" started-at="2020-03-05T10:04:43Z" finished-at="2020-03-05T10:04:51Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="validLoginTest" duration-ms="5267" started-at="2020-03-05T11:19:44Z" finished-at="2020-03-05T11:19:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validRegisterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Register@cc285f4]" name="tearDown" is-config="true" duration-ms="2227" started-at="2020-03-05T10:04:51Z" finished-at="2020-03-05T10:04:53Z">
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="tearDown" is-config="true" duration-ms="1947" started-at="2020-03-05T11:19:49Z" finished-at="2020-03-05T11:19:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.Register -->
+      </class> <!-- com.training.sanity.tests.RecoverPassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

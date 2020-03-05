@@ -31,7 +31,7 @@ public class ScreenShot {
 		
 		// to be changed 
 		String path = "";
-		String fileName ="C:\\Users\\ThriveniGorantla\\Desktop";
+		String fileName ="";
 
 		GregorianCalendar calendar = new GregorianCalendar(); 
 		
@@ -66,7 +66,7 @@ public class ScreenShot {
 
 	public void captureScreenShot(String fileName){
 		
-		String path =  "C:\\Users\\ThriveniGorantla\\Desktop";
+		String path =  "";
 	
 		// 1. create file 
 		// 2. capture screenshot from selenium 

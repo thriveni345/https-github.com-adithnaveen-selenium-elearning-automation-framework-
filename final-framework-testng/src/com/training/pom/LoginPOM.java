@@ -15,24 +15,32 @@ public class LoginPOM {
 	
 	@FindBy(name="email")
 	private WebElement userName; 
-	
-	@FindBy(id="input-password")
-	private WebElement password;
-	
-	@FindBy(xpath="//input[@value='Login']")
-	private WebElement loginBtn; 
-	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
 	}
+	@FindBy(linkText="Forgotten Password")
+	private WebElement Forgotten_link;
+	public void clickForgotten_link() {
+		this.Forgotten_link.click();
+	}
 	
-	public void sendPassword(String password) {
+	
+	/*@FindBy(id="input-password")
+	private WebElement password;
+	
+	@FindBy(xpath="//input[@value='Login']")
+	private WebElement loginBtn; */
+	
+	
+	
+	
+	/*public void sendPassword(String password) {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
 	}
 	
 	public void clickLoginBtn() {
-		this.loginBtn.click(); 
+		this.loginBtn.click(); */
 	}
-}
+
