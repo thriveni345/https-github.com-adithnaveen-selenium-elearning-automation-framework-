@@ -1,29 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22678" started-at="2020-03-05T05:49:28Z" finished-at="2020-03-05T05:49:51Z">
+  <suite name="Default suite" duration-ms="107757" started-at="2020-03-09T10:25:34Z" finished-at="2020-03-09T10:27:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22678" started-at="2020-03-05T05:49:28Z" finished-at="2020-03-05T05:49:51Z">
-      <class name="com.training.sanity.tests.RecoverPassword">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2020-03-05T11:19:28Z" finished-at="2020-03-05T11:19:28Z">
+    <test name="Default test" duration-ms="107757" started-at="2020-03-09T10:25:34Z" finished-at="2020-03-09T10:27:22Z">
+      <class name="com.training.sanity.tests.Multipleinputs">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUpBeforeClass" is-config="true" duration-ms="27" started-at="2020-03-09T15:55:34Z" finished-at="2020-03-09T15:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="setUp" is-config="true" duration-ms="15412" started-at="2020-03-05T11:19:28Z" finished-at="2020-03-05T11:19:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUp" is-config="true" duration-ms="17462" started-at="2020-03-09T15:55:36Z" finished-at="2020-03-09T15:55:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="validLoginTest" duration-ms="5267" started-at="2020-03-05T11:19:44Z" finished-at="2020-03-05T11:19:49Z">
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="validLoginTest" duration-ms="3118" started-at="2020-03-09T15:55:53Z" data-provider="Multiple-inputs" finished-at="2020-03-09T15:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fields Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[E-Mail]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RecoverPassword@cc285f4]" name="tearDown" is-config="true" duration-ms="1947" started-at="2020-03-05T11:19:49Z" finished-at="2020-03-05T11:19:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="tearDown" is-config="true" duration-ms="2327" started-at="2020-03-09T15:55:56Z" finished-at="2020-03-09T15:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RecoverPassword -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUp" is-config="true" duration-ms="15508" started-at="2020-03-09T15:55:59Z" finished-at="2020-03-09T15:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="validLoginTest" duration-ms="3084" started-at="2020-03-09T15:56:14Z" data-provider="Multiple-inputs" finished-at="2020-03-09T15:56:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neha@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[23445.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="tearDown" is-config="true" duration-ms="2261" started-at="2020-03-09T15:56:17Z" finished-at="2020-03-09T15:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUp" is-config="true" duration-ms="15968" started-at="2020-03-09T15:56:19Z" finished-at="2020-03-09T15:56:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="validLoginTest" duration-ms="3699" started-at="2020-03-09T15:56:35Z" data-provider="Multiple-inputs" finished-at="2020-03-09T15:56:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[neha]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="tearDown" is-config="true" duration-ms="2195" started-at="2020-03-09T15:56:39Z" finished-at="2020-03-09T15:56:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUp" is-config="true" duration-ms="16488" started-at="2020-03-09T15:56:41Z" finished-at="2020-03-09T15:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="validLoginTest" duration-ms="2500" started-at="2020-03-09T15:56:58Z" data-provider="Multiple-inputs" finished-at="2020-03-09T15:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sharma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="tearDown" is-config="true" duration-ms="2100" started-at="2020-03-09T15:57:00Z" finished-at="2020-03-09T15:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="setUp" is-config="true" duration-ms="15114" started-at="2020-03-09T15:57:02Z" finished-at="2020-03-09T15:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="validLoginTest" duration-ms="2597" started-at="2020-03-09T15:57:17Z" data-provider="Multiple-inputs" finished-at="2020-03-09T15:57:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neha2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[neha2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Multipleinputs@55f3ddb1]" name="tearDown" is-config="true" duration-ms="2118" started-at="2020-03-09T15:57:20Z" finished-at="2020-03-09T15:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.Multipleinputs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

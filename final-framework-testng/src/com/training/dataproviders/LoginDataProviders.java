@@ -41,4 +41,10 @@ public class LoginDataProviders {
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
 	}
+	@DataProvider(name = "Multiple-inputs")
+	public Object[][] getMultipleData(){
+		// ensure you will have the title as first line in the file 
+		String fileName ="C:\\Users\\ThriveniGorantla\\Documents\\Medium_01.xlsx";
+		return new ApachePOIExcelRead().getExcelContent(fileName); 
+	}
 }

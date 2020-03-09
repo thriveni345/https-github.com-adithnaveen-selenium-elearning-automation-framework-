@@ -48,8 +48,8 @@ public class LoginExcelTest {
 		driver.quit();
 	}
 
-	@Test(dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
-	public void loginDBTest(String userName, String password) {
+	@Test(dataProvider = "Multiple-inputs", dataProviderClass = LoginDataProviders.class)
+	public void loginDBTest(String Fields Name, String E-Mail, String Password) {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn();
