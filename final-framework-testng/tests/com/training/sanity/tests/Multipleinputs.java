@@ -62,6 +62,7 @@ public class Multipleinputs {
 		homePOM.clickLogin_btn();		
 		loginPOM.sendUserName(EMail);
 		loginPOM.sendPassword(Password);
+		loginPOM.clickLoginBtn();
 		screenShot.captureScreenShot("FieldsName");
 		
 		
