@@ -1,0 +1,79 @@
+package com.training.sanity.tests;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import com.training.generics.ScreenShot;
+import com.training.pom.CheckoutPOM;
+import com.training.pom.HomePOM;
+import com.training.utility.DriverFactory;
+import com.training.utility.DriverNames;
+
+public class CheckOutverification {
+	private WebDriver driver;
+	private String baseUrl;
+	private HomePOM homePOM;
+	private CheckoutPOM checkoutPOM;
+	private static Properties properties;
+	private ScreenShot screenShot;
+	
+
+	/*public static void main(String[] dsargs) {
+		// TODO Auto-generated method stub
+		
+	WebDriver driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.get("http://uniformm1.upskills.in/");
+	driver.findElement(By.xpath("//img[@alt='banner1']")).click();
+	driver.findElement(By.xpath("//img[@title='REGULAR T-SHIRTS (Rust)']")).click();
+	Select select=new Select(driver.findElement(By.id("input-option376")));
+	select.selectByValue("969");
+	driver.findElement(By.id("button-cart")).click();
+	driver.findElement(By.xpath("//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']")).click();
+	driver.findElement(By.xpath("//strong[contains(text(),'View Cart')]")).click();
+	driver.findElement(By.linkText("Checkout")).click();
+	}*/
+	@BeforeClass
+	public static void setUpBeforeClass() throws IOException {
+		properties = new Properties();
+		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		properties.load(inStream);
+	}
+
+	@BeforeMethod
+	public void setUp() throws Exception {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		//registerPOM = new RegisterPOM(driver);
+		//loginPOM=new LoginPOM(driver);
+		homePOM=new HomePOM(driver); 
+		checkoutPOM=new CheckoutPOM(driver);
+		baseUrl = properties.getProperty("baseURL");
+		screenShot = new ScreenShot(driver); 
+		// open the browser 
+		driver.get(baseUrl);
+		
+	}
+	
+	@AfterMethod
+	public void tearDown() throws Exception {
+		Thread.sleep(1000);
+		driver.quit();
+	}
+	@Test
+	public void validLoginTest() {
+		homePOM.clickshopUniform();
+		homePOM.clickTSHIRTS();
+		homePOM.clickSize();
+		homePOM.clickAddtoCart();
+		checkoutPOM.Clickcart();
+		checkoutPOM.clickviewcart();
+		checkoutPOM.clickCheckout();
+		screenShot.captureScreenShot("Checkout");
+	}
+}
