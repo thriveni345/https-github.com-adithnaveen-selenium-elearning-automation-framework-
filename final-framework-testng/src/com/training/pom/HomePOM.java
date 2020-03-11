@@ -31,7 +31,7 @@ public class HomePOM {
 	
 	public void clickSize() {
 		Select select=new Select(this.Size);
-		select.selectByValue("969");
+		select.selectByValue("970");
 	}
 	@FindBy(id="button-cart")
 	private WebElement AddtoCart;

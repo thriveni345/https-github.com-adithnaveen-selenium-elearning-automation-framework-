@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48627" started-at="2020-03-10T13:01:55Z" finished-at="2020-03-10T13:02:44Z">
+  <suite name="Default suite" duration-ms="37001" started-at="2020-03-11T14:14:59Z" finished-at="2020-03-11T14:15:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48627" started-at="2020-03-10T13:01:55Z" finished-at="2020-03-10T13:02:44Z">
-      <class name="com.training.sanity.tests.CheckOutverification">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.CheckOutverification@cc285f4]" name="setUpBeforeClass" is-config="true" duration-ms="41" started-at="2020-03-10T18:31:55Z" finished-at="2020-03-10T18:31:55Z">
+    <test name="Default test" duration-ms="37001" started-at="2020-03-11T14:14:59Z" finished-at="2020-03-11T14:15:36Z">
+      <class name="com.training.sanity.tests.PreloginVerification">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.PreloginVerification@c038203]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2020-03-11T19:44:59Z" finished-at="2020-03-11T19:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CheckOutverification@cc285f4]" name="setUp" is-config="true" duration-ms="25356" started-at="2020-03-10T18:31:55Z" finished-at="2020-03-10T18:32:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.PreloginVerification@c038203]" name="setUp" is-config="true" duration-ms="16574" started-at="2020-03-11T19:44:59Z" finished-at="2020-03-11T19:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.CheckOutverification@cc285f4]" name="validLoginTest" duration-ms="19582" started-at="2020-03-10T18:32:21Z" finished-at="2020-03-10T18:32:40Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.PreloginVerification@c038203]" name="validLoginTest" duration-ms="20374" started-at="2020-03-11T19:45:16Z" finished-at="2020-03-11T19:45:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.CheckOutverification@cc285f4]" name="tearDown" is-config="true" duration-ms="3598" started-at="2020-03-10T18:32:40Z" finished-at="2020-03-10T18:32:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.CheckOutverification -->
+      </class> <!-- com.training.sanity.tests.PreloginVerification -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
