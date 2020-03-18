@@ -11,7 +11,7 @@ import com.training.readexcel.ReadExcel;
 
 public class LoginDataProviders {
 
-	@DataProvider(name = "db-inputs")
+	/*@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
 		List<LoginBean> list = new ELearningDAO().getLogins(); 
@@ -40,7 +40,7 @@ public class LoginDataProviders {
 	public Object[][] getXLSData(){
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
-	}
+	}*/
 	@DataProvider(name = "Multiple-inputs")
 	public Object[][] getMultipleData(){
 		// ensure you will have the title as first line in the file 

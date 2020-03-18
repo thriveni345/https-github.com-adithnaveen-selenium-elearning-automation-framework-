@@ -29,6 +29,9 @@ private WebDriver driver;
 	@FindBy(name="address_1")
 	private WebElement address; 
 	
+	@FindBy(name="address_2")
+	private WebElement address2; 
+	
 	@FindBy(id="input-city")
 	private WebElement city; 
 	
@@ -76,6 +79,10 @@ private WebDriver driver;
 		this.telephone.sendKeys(telephone); 
 	}
 	public void sendaddress(String address) {
+		this.address.clear(); 
+		this.address.sendKeys(address); 
+	}
+	public void sendaddress2(String address) {
 		this.address.clear(); 
 		this.address.sendKeys(address); 
 	}
